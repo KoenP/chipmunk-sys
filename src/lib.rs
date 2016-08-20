@@ -1014,7 +1014,7 @@ extern "C" {
      -> ();
     pub fn cpArbiterGetFriction(arb: *const cpArbiter) -> cpFloat;
     pub fn cpArbiterSetFriction(arb: *mut cpArbiter, friction: cpFloat) -> ();
-    pub fn cpArbiterGetSurfaceVelocity(arb: *mut cpArbiter) -> cpVect;
+    pub fn cpArbiterGetSurfaceVelocity(arb: &cpArbiter) -> cpVect;
     pub fn cpArbiterSetSurfaceVelocity(arb: *mut cpArbiter, vr: cpVect) -> ();
     pub fn cpArbiterGetUserData(arb: *const cpArbiter) -> cpDataPointer;
     pub fn cpArbiterSetUserData(arb: *mut cpArbiter, userData: cpDataPointer)
